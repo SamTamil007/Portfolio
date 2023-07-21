@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    loader: "custom",
+    loaderFile: "./components/image.ts",
+  },
   reactStrictMode: true,
   swcMinify: true,
-  distDir: "dist",
+  distDir: "build",
   output: "export",
 };
 
