@@ -2,7 +2,7 @@
 const nextConfig = {
   images: {
     loader: "custom",
-    loaderFile: "./components/image.ts",
+    loaderFile: "./components/image.js",
   },
   reactStrictMode: true,
   swcMinify: true,
