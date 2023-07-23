@@ -33,8 +33,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              I take pride in my ability to produce high-quality work.
             </motion.p>
           </div>
           {/* slider */}

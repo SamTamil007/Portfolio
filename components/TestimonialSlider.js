@@ -1,26 +1,26 @@
 // testimonial data
 export const testimonialData = [
   {
-    image: "/t-avt-1.png",
-    name: "Anne Smith",
-    position: "Customer",
+    image: "/cbs.png",
+    name: "Josuva",
+    position: "Manager",
     message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+      "good management of the human resources and accounting. excellent technical Excel maintenance and data visualization capabilities",
   },
-  {
-    image: "/t-avt-2.png",
-    name: "Jane Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
-  {
-    image: "/t-avt-3.png",
-    name: "Jhon Doe",
-    position: "Customer",
-    message:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
-  },
+  // {
+  //   image: "/t-avt-2.png",
+  //   name: "Jane Doe",
+  //   position: "Customer",
+  //   message:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  // },
+  // {
+  //   image: "/t-avt-3.png",
+  //   name: "Jhon Doe",
+  //   position: "Customer",
+  //   message:
+  //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!",
+  // },
 ];
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -53,7 +53,13 @@ const TestimonialSlider = () => {
                 <div className="flex flex-col justify-center text-center">
                   {/* avatar */}
                   <div className="mb-2 mx-auto">
-                    <Image src={person.image} width={100} height={100} alt="" />
+                    <Image
+                      className="rounded-full overflow-hidden h-28 w-28"
+                      src={person.image}
+                      width={100}
+                      height={100}
+                      alt=""
+                    />
                   </div>
                   {/* name */}
                   <div className="text-lg">{person.name}</div>

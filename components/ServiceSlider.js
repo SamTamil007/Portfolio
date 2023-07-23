@@ -14,34 +14,29 @@ import {
   RxArrowTopRight,
 } from "react-icons/rx";
 
+import { TbDeviceDesktopAnalytics } from "react-icons/tb";
+
 import { FreeMode, Pagination } from "swiper";
 
 // data
 export const serviceData = [
   {
-    icon: <RxCrop />,
-    title: "Branding",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
     icon: <RxPencil2 />,
     title: "Design",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "I create designs that inspire and delight people, creating a lasting impression on those who experience them.",
   },
   {
     icon: <RxDesktop />,
     title: "Development",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description:
+      "I'll never stop learning, evolving, and innovating in order to produce extraordinary solutions that have a good impact on the world.",
   },
   {
-    icon: <RxReader />,
-    title: "Copywriting",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: <RxRocket />,
-    title: "SEO",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    icon: <TbDeviceDesktopAnalytics />,
+    title: "Data Science",
+    description:
+      "I am exceptional at drawing meaningful conclusions from data, enabling wise decisions, and fostering achievement.",
   },
 ];
 

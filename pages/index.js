@@ -1,8 +1,8 @@
 import Image from "next/image";
-
+import React, { Suspense } from "react";
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
-import Avatar from "../components/Avatar";
+const Avatar = React.lazy(() => import("../components/Avatar.js"));
 
 import { motion } from "framer-motion";
 
@@ -31,11 +31,10 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="text-lg max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor
-            sit amet consectetur adipiscing elit ut.
+            I develop intuitive digital solutions that address particular
+            demands and improve user interfaces in the digital sphere.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
@@ -65,7 +64,9 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full
+          max-w-[737px] max-h-[678px]
+          absolute "
         >
           <Avatar />
         </motion.div>

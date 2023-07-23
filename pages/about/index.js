@@ -7,6 +7,8 @@ import {
   FaReact,
   FaFigma,
   FaWordpress,
+  FaPython,
+  FaRProject,
 } from "react-icons/fa";
 
 import {
@@ -14,7 +16,20 @@ import {
   SiNextdotjs,
   SiAdobexd,
   SiAdobephotoshop,
+  SiMysql,
+  SiPrisma,
+  SiTailwindcss,
+  SiTypescript,
+  SiPowerbi,
+  SiJupyter,
+  SiTableau,
 } from "react-icons/si";
+
+import { TbBrandNextjs } from "react-icons/tb";
+
+import { BiLogoCPlusPlus, BiLogoMongodb } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
+import { RiFileExcel2Fill } from "react-icons/ri";
 
 //  data
 export const aboutData = [
@@ -22,14 +37,41 @@ export const aboutData = [
     title: "skills",
     info: [
       {
+        title: "Programming",
+        icons: [
+          <FaPython key="python" />,
+          <FaRProject key="rproject" />,
+          <BiLogoCPlusPlus key="cplusplus" />,
+        ],
+      },
+      {
+        title: "Database",
+        icons: [
+          <GrMysql key="mysql" />,
+          <BiLogoMongodb key="mongodb" />,
+          <SiPrisma key="prisma" />,
+        ],
+      },
+      {
+        title: "Data Science",
+        icons: [
+          <RiFileExcel2Fill key="excel" />,
+          <SiPowerbi key="powerbi" />,
+          <SiJupyter key="jupyter" />,
+          <SiTableau key="tableau" />,
+        ],
+      },
+      {
         title: "Web Development",
         icons: [
           <FaHtml5 key="html" />,
           <FaCss3 key="css" />,
+          <SiTailwindcss key="tilwindcss" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
-          <SiNextdotjs key="next" />,
-          <SiFramer key="framer" />,
+          <TbBrandNextjs key="nextjs" />,
+          // <SiNextdotjs key="next" />,
+          <SiTypescript key="typesript" />,
           <FaWordpress key="wordpress" />,
         ],
       },
@@ -37,39 +79,32 @@ export const aboutData = [
         title: "UI/UX Design",
         icons: [
           <FaFigma key="figma" />,
-          <SiAdobexd key="adobexd" />,
+          // <SiAdobexd key="adobexd" />,
           <SiAdobephotoshop key="adobephotoshop" />,
         ],
       },
     ],
   },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
-      },
-      {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
+  // {
+  //   title: "awards",
+  //   info: [
+  //     {
+  //       title: "Webby Awards - Honoree",
+  //       stage: "2011 - 2012",
+  //     },
+  //     {
+  //       title: "Adobe Design Achievement Awards - Finalist",
+  //       stage: "2009 - 2010",
+  //     },
+  //   ],
+  // },
   {
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title:
+          "Accounting and Inventory Managing - Credential Business Solutions",
+        stage: "2022 - 2023",
       },
     ],
   },
@@ -77,16 +112,12 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "+2 - St.Joseph Mat. Hr. Sec. School, CHE, TN",
+        stage: "2021",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "B.Sc. Statistics - Madras Christian College, CHE, TN",
+        stage: "2024",
       },
     ],
   },
@@ -114,7 +145,7 @@ const About = () => {
         exit="hidden"
         className="hidden xl:flex absolute bottom-0 -left-[370px]"
       >
-        <Avatar />
+        {/* <Avatar /> */}
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
@@ -126,8 +157,8 @@ const About = () => {
             exit="hidden"
             className="h2"
           >
-            Captivation <span className="text-accent">stories</span> birth
-            magnificent designs.
+            Sculpting <span className="text-accent">Success</span> through
+            Analytics and Creative Design.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.2)}
@@ -136,9 +167,11 @@ const About = () => {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago,I began freelancing as a eveloper. Science ten,
-            I&apos;ve done remote work for agencies, counsulted for startups,
-            and collaborated on digital products for business and consumer use.
+            2 years ago,I began my life as a developer. since then, I&apos;ve
+            started doing my own Projects and developed my skills in both{" "}
+            <span className="text-accent">Data Science</span> and{" "}
+            <span className="text-accent">Web Designing</span> and it
+            continues...
           </motion.p>
           {/* counters */}
           <motion.div
@@ -152,39 +185,39 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />+
+                  <CountUp start={0} end={2} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Years of Experience
                 </div>
               </div>
               {/* Clients */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={250} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Satisfied clients
                 </div>
-              </div>
+              </div> */}
               {/* Projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />+
+                  <CountUp start={0} end={5} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Finished Projects
                 </div>
               </div>
               {/* Awards */}
-              <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
+              {/* <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={8} duration={5} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
                   Winning Awards
                 </div>
-              </div>
+              </div> */}
             </div>
           </motion.div>
         </div>

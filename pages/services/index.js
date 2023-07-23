@@ -33,8 +33,8 @@ const Services = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+              I deliver excellent service that is personalized to meet your
+              needs with a commitment to excellence.
             </motion.p>
           </div>
           {/* slider */}
