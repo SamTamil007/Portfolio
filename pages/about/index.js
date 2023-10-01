@@ -48,8 +48,8 @@ export const aboutData = [
         title: "Database",
         icons: [
           <GrMysql key="mysql" />,
-          <BiLogoMongodb key="mongodb" />,
-          <SiPrisma key="prisma" />,
+          // <BiLogoMongodb key="mongodb" />,
+          // <SiPrisma key="prisma" />,
         ],
       },
       {
@@ -58,7 +58,7 @@ export const aboutData = [
           <RiFileExcel2Fill key="excel" />,
           <SiPowerbi key="powerbi" />,
           <SiJupyter key="jupyter" />,
-          <SiTableau key="tableau" />,
+          // <SiTableau key="tableau" />,
         ],
       },
       {
@@ -69,9 +69,9 @@ export const aboutData = [
           <SiTailwindcss key="tilwindcss" />,
           <FaJs key="js" />,
           <FaReact key="react" />,
-          <TbBrandNextjs key="nextjs" />,
+          // <TbBrandNextjs key="nextjs" />,
           // <SiNextdotjs key="next" />,
-          <SiTypescript key="typesript" />,
+          // <SiTypescript key="typesript" />,
           <FaWordpress key="wordpress" />,
         ],
       },
@@ -102,9 +102,12 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title:
-          "Accounting and Inventory Managing - Credential Business Solutions",
-        stage: "2022 - 2023",
+        title: "Data Analyst(Intern) - Credential Business Solutions",
+        stage: "2022 March - 2022 October",
+      },
+      {
+        title: "HR(Intern) - Credential Business Solutions",
+        stage: "2022 March - 2022 October",
       },
     ],
   },
@@ -112,12 +115,12 @@ export const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "+2 - St.Joseph Mat. Hr. Sec. School, CHE, TN",
-        stage: "2021",
-      },
-      {
         title: "B.Sc. Statistics - Madras Christian College, CHE, TN",
         stage: "2024",
+      },
+      {
+        title: "+2 - St.Joseph Mat. Hr. Sec. School, CHE, TN",
+        stage: "2021",
       },
     ],
   },
