@@ -102,13 +102,15 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Data Analyst(Intern) - Credential Business Solutions",
-        stage: "2022 March - 2022 October",
-      },
-      {
         title: "HR(Intern) - Credential Business Solutions",
-        stage: "2022 March - 2022 October",
+        stage: "2022 October - 2023 March",
       },
+    
+      {
+        title: "Data Analyst(Intern) - Credential Business Solutions",
+        stage: "2022 March - 2022 August",
+      },
+      
     ],
   },
   {

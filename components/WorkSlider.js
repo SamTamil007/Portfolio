@@ -5,7 +5,7 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/P1.png",
+          path: "/P11.png",
           url: "https://netflix-mini-ivory.vercel.app/",
         },
         {
