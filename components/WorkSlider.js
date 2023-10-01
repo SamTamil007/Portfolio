@@ -10,7 +10,7 @@ export const workSlides = {
         },
         {
           title: "title",
-          path: "/P2.png",
+          path: "/111.png",
           url: "https://portfolio-site-theta-beryl.vercel.app/",
         },
       ],
