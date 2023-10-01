@@ -22,8 +22,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent">Digital Reality</span>
+            Hello, <br /> I&aposm{" "}
+            <span className="text-accent">OBETH SAMUEL RAJ S</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -33,8 +33,11 @@ const Home = () => {
             exit="hidden"
             className="text-lg max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I develop intuitive digital solutions that address particular
-            demands and improve user interfaces in the digital sphere.
+            I&aposm driven by a passion for crafting innovative solutions that
+            simplify and enhance lives. The process of identifying challenges,
+            developing impactful solutions, and witnessing positive change fuels
+            my enthusiasm. I&aposm always eager to embrace new challenges and
+            grow, both personally and professionally.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
