@@ -22,7 +22,7 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Hello, <br /> I&aposm{" "}
+            Hello, <br /> I'm{" "}
             <span className="text-accent">OBETH SAMUEL RAJ S</span>
           </motion.h1>
           {/* subtitle */}
@@ -33,11 +33,11 @@ const Home = () => {
             exit="hidden"
             className="text-lg max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            I&aposm driven by a passion for crafting innovative solutions that
+            I'm driven by a passion for crafting innovative solutions that
             simplify and enhance lives. The process of identifying challenges,
             developing impactful solutions, and witnessing positive change fuels
-            my enthusiasm. I&aposm always eager to embrace new challenges and
-            grow, both personally and professionally.
+            my enthusiasm. I'm always eager to embrace new challenges and grow,
+            both personally and professionally.
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
