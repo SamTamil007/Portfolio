@@ -3,7 +3,7 @@ export const testimonialData = [
   {
     image: "/cbs.png",
     name: "Josuva",
-    position: "Manager",
+    position: "Managing Director",
     message:
       "good management of the human resources and accounting. excellent technical Excel maintenance and data visualization capabilities",
   },

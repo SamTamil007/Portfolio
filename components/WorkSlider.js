@@ -5,13 +5,13 @@ export const workSlides = {
       images: [
         {
           title: "title",
-          path: "/111.png",
-          url: "https://www.google.com",
+          path: "/P1.png",
+          url: "https://netflix-mini-ivory.vercel.app/",
         },
         {
           title: "title",
-          path: "/112.png",
-          url: "https://www.google.com",
+          path: "/P2.png",
+          url: "https://portfolio-site-theta-beryl.vercel.app/",
         },
       ],
     },
